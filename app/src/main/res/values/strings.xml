@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Calories Per Dollar</string>
+    <string name="tab_text_1">Calculate</string>
+    <string name="tab_text_2">Saved</string>
+    <string name="calculate">Calculate</string>
+    <string name="saved">Saved</string>
+    <string name="hello_calculate_fragment">Hello calculate fragment</string>
+    <string name="hello_saved_fragment">Hello saved fragment</string>
+    <string name="calories_per_serving">Calories Per Serving</string>
+    <string name="number_of_servings">Number Of Servings</string>
+    <string name="price_of_item">Price Of Item</string>
+    <string name="calories_per_dollar">Calories Per Dollar</string>
+    <string name="cal">Cal / $</string>
+    <string name="clear">Clear</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="item_already_saved">Item already saved!</string>
+    <string name="need_name_of_item_to_save">Need name of item to save!</string>
+    <string name="need_calories_per_dollar_to_save">Need calories per dollar to save!</string>
+    <string name="saved_exclamation">Saved! ✓</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_of_item">Name Of Item</string>
+</resources>
