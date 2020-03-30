@@ -85,11 +85,12 @@ class CalculateFragment : Fragment() {
             clearFields()
         }
         saveButton.setOnClickListener {
+            saveItem()
             // tells the MainActivity that the time has come
-            mListener.onCalculateFragmentInteraction()
+            // mListener.onCalculateFragmentInteraction()
+            // (moved to save function)
             // closes keyboard
             (activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?)?.hideSoftInputFromWindow(calculateLayout.windowToken, 0)
-            saveItem()
         }
 
         return view
@@ -133,6 +134,8 @@ class CalculateFragment : Fragment() {
                 if (newItem !in SavedContent.ITEMS) {
                     SavedContent.addItem(newItem)
                     clearFields()
+                    // tell the MainActivity that the time has come
+                    mListener.onCalculateFragmentInteraction()
                     saveWarning.text = resources.getString(R.string.saved_exclamation)
                 } else {
                     saveWarning.text = resources.getString(R.string.item_already_saved)
