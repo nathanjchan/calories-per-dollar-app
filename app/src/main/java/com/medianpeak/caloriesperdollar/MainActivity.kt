@@ -1,10 +1,16 @@
 package com.medianpeak.caloriesperdollar
 
+import android.content.Context
 import android.os.Bundle
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.medianpeak.caloriesperdollar.ui.main.*
+import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
+import com.medianpeak.caloriesperdollar.ui.main.CalculateFragment
+import com.medianpeak.caloriesperdollar.ui.main.ItemDialogFragment
+import com.medianpeak.caloriesperdollar.ui.main.ItemFragment
+import com.medianpeak.caloriesperdollar.ui.main.SectionsPagerAdapter
 import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
 
 class MainActivity : AppCompatActivity(),
@@ -24,6 +30,15 @@ class MainActivity : AppCompatActivity(),
 
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
+
+        tabs.addOnTabSelectedListener(object : OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+                // closes keyboard
+                (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?)?.hideSoftInputFromWindow(viewPager.windowToken, 0)
+            }
+            override fun onTabUnselected(tab: TabLayout.Tab) {}
+            override fun onTabReselected(tab: TabLayout.Tab) {}
+        })
     }
 
     override fun onListFragmentInteraction(item: SavedContent.SavedItem) {

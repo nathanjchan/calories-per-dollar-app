@@ -9,7 +9,6 @@ import com.medianpeak.caloriesperdollar.R
 import com.medianpeak.caloriesperdollar.ui.main.ItemFragment.OnListFragmentInteractionListener
 import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
 import kotlinx.android.synthetic.main.fragment_item.view.*
-import kotlin.system.exitProcess
 
 class MyItemRecyclerViewAdapter(
     private val mValues: List<SavedContent.SavedItem>,
