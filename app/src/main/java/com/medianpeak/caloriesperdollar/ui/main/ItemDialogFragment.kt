@@ -24,7 +24,9 @@ class ItemDialogFragment(itemNumParam: Int) : DialogFragment() {
     private lateinit var caloriesPerServing: TextView
     private lateinit var numberOfServings: TextView
     private lateinit var priceOfItem: TextView
+
     private lateinit var deleteButton: Button
+    private lateinit var closeButton: Button
 
     private lateinit var itemDialogLayout: ConstraintLayout
     private lateinit var mListener: OnItemDialogFragmentInteractionListener
@@ -51,6 +53,7 @@ class ItemDialogFragment(itemNumParam: Int) : DialogFragment() {
             numberOfServings = view.findViewById(R.id.number_of_servings_dialog)
             priceOfItem = view.findViewById(R.id.price_of_item_dialog)
             deleteButton = view.findViewById(R.id.delete_button)
+            closeButton = view.findViewById(R.id.close_button)
 
             val item: SavedContent.SavedItem = SavedContent.ITEMS[itemNum!!]
             val nameOfItemText: String = item.nameOfItem
@@ -77,10 +80,13 @@ class ItemDialogFragment(itemNumParam: Int) : DialogFragment() {
                 mListener.onItemDialogFragmentInteraction()
                 dialog?.cancel()
             }
+            closeButton.setOnClickListener {
+                dialog?.cancel()
+            }
 
             builder.setView(view)
                 // Add action buttons
-                .setPositiveButton(R.string.close) { _, _ -> }
+                //.setPositiveButton(R.string.close) { _, _ -> }
                 //.setNegativeButton(R.string.delete) { _, _ ->
                 //        dialog?.cancel()
                 //}

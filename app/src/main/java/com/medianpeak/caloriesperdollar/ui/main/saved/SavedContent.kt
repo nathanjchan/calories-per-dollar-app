@@ -8,8 +8,8 @@ object SavedContent {
     //private const val COUNT = 25
 
     init {
-        addItem(SavedItem("Mac n Cheese", 1.0, 2.0, 3.0, 4.0))
-        addItem(SavedItem("Trader Joe's Ground Beef", 5.0, 6.0, 7.0, 8.0))
+        addItem(SavedItem("Ritz Crackers Costco", 980.88, 80.0, 109.0, 8.89))
+        addItem(SavedItem("Cheez-its Costco", 855.51, 150.0, 45.0, 7.89))
     }
 
     fun addItem(new_item: SavedItem) {
