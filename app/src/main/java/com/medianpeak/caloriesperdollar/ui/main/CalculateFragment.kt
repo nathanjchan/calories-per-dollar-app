@@ -134,7 +134,7 @@ class CalculateFragment : Fragment() {
                 val newItem = SavedContent.SavedItem(nameOfItem.text.toString(), caloriesPerDollarNum, caloriesPerServingNum, numberOfServingsNum, priceOfItemNum)
                 if (newItem !in SavedContent.ITEMS) {
                     SavedContent.addItem(newItem)
-                    nameOfItem.text.clear()
+                    clearFields()
                     saveWarning.text = resources.getString(R.string.saved_exclamation)
                 } else {
                     saveWarning.text = resources.getString(R.string.item_already_saved)
