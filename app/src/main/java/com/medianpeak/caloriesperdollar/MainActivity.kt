@@ -2,18 +2,15 @@ package com.medianpeak.caloriesperdollar
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentTransaction
-import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.medianpeak.caloriesperdollar.ui.main.CalculateFragment
-import com.medianpeak.caloriesperdollar.ui.main.ItemFragment
-import com.medianpeak.caloriesperdollar.ui.main.MyItemRecyclerViewAdapter
-import com.medianpeak.caloriesperdollar.ui.main.SectionsPagerAdapter
+import com.medianpeak.caloriesperdollar.ui.main.*
 import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
-import kotlin.system.exitProcess
 
-class MainActivity : AppCompatActivity(), ItemFragment.OnListFragmentInteractionListener, CalculateFragment.OnCalculateFragmentInteractionListener {
+class MainActivity : AppCompatActivity(),
+    ItemFragment.OnListFragmentInteractionListener,
+    CalculateFragment.OnCalculateFragmentInteractionListener,
+    ItemDialogFragment.OnItemDialogFragmentInteractionListener {
 
     private lateinit var viewPager : ViewPager
 
@@ -30,10 +27,17 @@ class MainActivity : AppCompatActivity(), ItemFragment.OnListFragmentInteraction
     }
 
     override fun onListFragmentInteraction(item: SavedContent.SavedItem) {
+        val newFragment = ItemDialogFragment(SavedContent.ITEMS.indexOf(item))
+        newFragment.show(supportFragmentManager, "item")
     }
 
     override fun onCalculateFragmentInteraction() {
         // when save button pressed, update the view_pager
+        viewPager.adapter?.notifyDataSetChanged()
+    }
+
+    override fun onItemDialogFragmentInteraction() {
+        // when delete button pressed
         viewPager.adapter?.notifyDataSetChanged()
     }
 }

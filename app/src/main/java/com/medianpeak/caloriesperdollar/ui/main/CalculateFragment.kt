@@ -68,6 +68,7 @@ class CalculateFragment : Fragment() {
         clearButton = view.findViewById(R.id.clear_button)
         saveButton = view.findViewById(R.id.save_button)
 
+        // Save Button
         calculateLayout = view.findViewById(R.id.calculate_layout)
         if (context is OnCalculateFragmentInteractionListener) {
             mListener = context as OnCalculateFragmentInteractionListener
@@ -75,55 +76,15 @@ class CalculateFragment : Fragment() {
             throw RuntimeException("$context must implement OnCalculateFragmentInteractionListener")
         }
 
-        caloriesPerServing.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
+        createTextChangedListener(caloriesPerServing)
+        createTextChangedListener(numberOfServings)
+        createTextChangedListener(priceOfItem)
+        createTextChangedListener(nameOfItem)
 
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                updateCaloriesPerDollar()
-            }
-        })
-        numberOfServings.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                updateCaloriesPerDollar()
-            }
-        })
-        priceOfItem.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                updateCaloriesPerDollar()
-            }
-        })
-        nameOfItem.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                resetWarning()
-            }
-
-        })
         clearButton.setOnClickListener {
             clearFields()
         }
-        saveButton.setOnClickListener() {
+        saveButton.setOnClickListener {
             // tells the MainActivity that the time has come
             mListener.onCalculateFragmentInteraction()
             // closes keyboard
@@ -132,6 +93,18 @@ class CalculateFragment : Fragment() {
         }
 
         return view
+    }
+
+    private fun createTextChangedListener(editText: EditText) {
+        editText.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                updateCaloriesPerDollar()
+            }
+        })
     }
 
     private fun createNumbers() {
