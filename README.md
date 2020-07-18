@@ -1,6 +1,6 @@
 # Calories Per Dollar App
 ## Intro
-Optimize your shopping for **max caloric-intake efficiency**: input calories per serving, number of servings, and price. Output is calories per dollar. Save items for future reference.
+Optimize your shopping for **max caloric-intake efficiency**. Input calories per serving, number of servings, and price. Output is calories per dollar. Save items for future reference.
 
 ## Purpose
 Demonstrates ability to create mobile apps, understanding of software engineering concepts, and usage of Kotlin and Android Studio.
