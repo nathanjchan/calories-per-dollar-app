@@ -12,6 +12,6 @@ Demonstrates
 - Usage of Kotlin and Android Studio
 
 ## Demo
-<img src="https://www.nathanjchan.com/images/cpd1.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/cpd/cpd2.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd3.jpg" alt="drawing" width="200"/>
+<img src="https://www.nathanjchan.com/images/cpd1.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd2.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd3.jpg" alt="drawing" width="200"/>
 
-<img src="https://www.nathanjchan.com/images/cpd4.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/cpd/cpd5.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd6.jpg" alt="drawing" width="200"/> 
+<img src="https://www.nathanjchan.com/images/cpd4.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd5.jpg" alt="drawing" width="200"/> <img src="https://www.nathanjchan.com/images/cpd6.jpg" alt="drawing" width="200"/> 
