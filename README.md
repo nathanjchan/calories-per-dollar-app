@@ -1,6 +1,6 @@
 # Calories Per Dollar App
 ## Intro
-Optimize your shopping for **maximum caloric-intake efficiency**
+Optimize your shopping for **maximum calories per dollar efficiency**
 - Input calories, servings, and price
 - Output is calories per dollar
 - Save items for future reference
