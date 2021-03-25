@@ -1,13 +1,13 @@
-package com.medianpeak.caloriesperdollar.ui.main
+package com.nathanjchan.caloriesperdollar.ui.main
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.medianpeak.caloriesperdollar.R
-import com.medianpeak.caloriesperdollar.ui.main.ItemFragment.OnListFragmentInteractionListener
-import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
+import com.nathanjchan.caloriesperdollar.R
+import com.nathanjchan.caloriesperdollar.ui.main.ItemFragment.OnListFragmentInteractionListener
+import com.nathanjchan.caloriesperdollar.ui.main.saved.SavedContent
 import kotlinx.android.synthetic.main.fragment_item.view.*
 
 class MyItemRecyclerViewAdapter(

@@ -1,7 +1,6 @@
-package com.medianpeak.caloriesperdollar.ui.main.saved
+package com.nathanjchan.caloriesperdollar.ui.main.saved
 
 import java.util.ArrayList
-import java.util.HashSet
 
 object SavedContent {
     val ITEMS: MutableList<SavedItem> = ArrayList()

@@ -1,4 +1,4 @@
-package com.medianpeak.caloriesperdollar
+package com.nathanjchan.caloriesperdollar
 
 import android.content.Context
 import android.os.Bundle
@@ -7,11 +7,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
-import com.medianpeak.caloriesperdollar.ui.main.CalculateFragment
-import com.medianpeak.caloriesperdollar.ui.main.ItemDialogFragment
-import com.medianpeak.caloriesperdollar.ui.main.ItemFragment
-import com.medianpeak.caloriesperdollar.ui.main.SectionsPagerAdapter
-import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
+import com.nathanjchan.caloriesperdollar.ui.main.CalculateFragment
+import com.nathanjchan.caloriesperdollar.ui.main.ItemDialogFragment
+import com.nathanjchan.caloriesperdollar.ui.main.ItemFragment
+import com.nathanjchan.caloriesperdollar.ui.main.SectionsPagerAdapter
+import com.nathanjchan.caloriesperdollar.ui.main.saved.SavedContent
 
 class MainActivity : AppCompatActivity(),
     ItemFragment.OnListFragmentInteractionListener,

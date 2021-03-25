@@ -1,4 +1,4 @@
-package com.medianpeak.caloriesperdollar.ui.main
+package com.nathanjchan.caloriesperdollar.ui.main
 
 import android.content.Context
 import android.os.Bundle
@@ -13,8 +13,8 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
-import com.medianpeak.caloriesperdollar.R
-import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
+import com.nathanjchan.caloriesperdollar.R
+import com.nathanjchan.caloriesperdollar.ui.main.saved.SavedContent
 import kotlin.math.round
 import kotlin.properties.Delegates
 
@@ -50,7 +50,7 @@ class CalculateFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_calculate, container, false)
 

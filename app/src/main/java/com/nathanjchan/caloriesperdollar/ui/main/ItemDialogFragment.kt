@@ -1,4 +1,4 @@
-package com.medianpeak.caloriesperdollar.ui.main
+package com.nathanjchan.caloriesperdollar.ui.main
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -11,8 +11,8 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 
-import com.medianpeak.caloriesperdollar.R
-import com.medianpeak.caloriesperdollar.ui.main.saved.SavedContent
+import com.nathanjchan.caloriesperdollar.R
+import com.nathanjchan.caloriesperdollar.ui.main.saved.SavedContent
 
 private const val ARG_PARAM1 = "itemNumParam2"
 

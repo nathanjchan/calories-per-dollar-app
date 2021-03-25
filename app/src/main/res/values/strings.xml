@@ -4,9 +4,9 @@
     <string name="tab_text_2">Saved</string>
     <string name="calculate">Calculate</string>
     <string name="saved">Saved</string>
-    <string name="calories_per_serving">Calories Per Serving</string>
-    <string name="number_of_servings">Number Of Servings</string>
-    <string name="price_of_item">Price Of Item</string>
+    <string name="calories_per_serving">Calories</string>
+    <string name="number_of_servings">Servings</string>
+    <string name="price_of_item">Price</string>
     <string name="calories_per_dollar">Calories Per Dollar</string>
     <string name="cal">Cal / $</string>
     <string name="clear">Clear</string>
