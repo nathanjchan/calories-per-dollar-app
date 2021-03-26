@@ -1,15 +1,5 @@
-# Calories Per Dollar App
-## Intro
-Optimize your shopping for **maximum calories per dollar efficiency**
-- Input calories, servings, and price
-- Output is calories per dollar
-- Save items for future reference
-
-## Purpose
-Demonstrates
-- Ability to create Android apps
-- Understanding of software engineering concepts
-- Usage of Kotlin and Android Studio
+# Calories Per Dollar
+Calories Per Dollar helps you calculate food cost for unit energy. Minimize cost and maximize calories. Save your items to optimize your spending over time.
 
 ## Demo
 <img src="http://nathanjchan.com/images/calories-per-dollar-app1.jpg" alt="cpd1" width="200"/> <img src="http://nathanjchan.com/images/calories-per-dollar-app2.jpg" alt="cpd2" width="200"/> <img src="http://nathanjchan.com/images/calories-per-dollar-app3.jpg" alt="cpd3" width="200"/>
