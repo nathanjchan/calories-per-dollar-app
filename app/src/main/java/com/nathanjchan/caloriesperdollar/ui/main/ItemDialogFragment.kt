@@ -101,7 +101,7 @@ class ItemDialogFragment(itemNumParam: Int) : DialogFragment() {
     }
 
     private fun deleteItem(itemNum: Int) {
-        SavedContent.removeItemAt(itemNum)
+        context?.let { SavedContent.removeItemAt(itemNum, it) }
     }
 
     interface OnItemDialogFragmentInteractionListener {

@@ -132,7 +132,7 @@ class CalculateFragment : Fragment() {
             if (!nameOfItem.text.isBlank()) {
                 val newItem = SavedContent.SavedItem(nameOfItem.text.toString(), caloriesPerDollarNum, caloriesPerServingNum, numberOfServingsNum, priceOfItemNum)
                 if (newItem !in SavedContent.getItems()) {
-                    SavedContent.addItem(newItem)
+                    this.context?.let { SavedContent.addItem(newItem, it) }
                     clearFields()
                     // tell the MainActivity that the time has come
                     mListener.onCalculateFragmentInteraction()
