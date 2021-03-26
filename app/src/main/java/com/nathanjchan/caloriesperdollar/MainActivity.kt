@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(),
     }
 
     override fun onListFragmentInteraction(item: SavedContent.SavedItem) {
-        val newFragment = ItemDialogFragment(SavedContent.ITEMS.indexOf(item))
+        val newFragment = ItemDialogFragment(SavedContent.getItems().indexOf(item))
         newFragment.show(supportFragmentManager, "item")
     }
 

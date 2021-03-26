@@ -1,9 +1,9 @@
 package com.nathanjchan.caloriesperdollar.ui.main.saved
 
-import java.util.ArrayList
+import java.util.*
 
 object SavedContent {
-    val ITEMS: MutableList<SavedItem> = ArrayList()
+    private val ITEMS: MutableList<SavedItem> = ArrayList()
     //private const val COUNT = 25
 
     init {
@@ -21,6 +21,10 @@ object SavedContent {
         }
     }
 
+    fun getItems(): MutableList<SavedItem> {
+        return ITEMS
+    }
+
     private fun getSize(): Int {
         return ITEMS.size
     }
@@ -30,6 +34,6 @@ object SavedContent {
         val caloriesPerDollar: Double,
         val caloriesPerServing: Double,
         val numberOfServings: Double,
-        val priceOfItem: Double) {
-    }
+        val priceOfItem: Double
+    )
 }

@@ -55,7 +55,7 @@ class ItemDialogFragment(itemNumParam: Int) : DialogFragment() {
             deleteButton = view.findViewById(R.id.delete_button)
             closeButton = view.findViewById(R.id.close_button)
 
-            val item: SavedContent.SavedItem = SavedContent.ITEMS[itemNum!!]
+            val item: SavedContent.SavedItem = SavedContent.getItems()[itemNum!!]
             val nameOfItemText: String = item.nameOfItem
             val caloriesPerDollarText: String = "Calories Per Dollar: " + item.caloriesPerDollar
             val caloriesPerServingText: String = "Calories Per Serving: " + item.caloriesPerServing

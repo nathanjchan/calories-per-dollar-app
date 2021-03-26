@@ -28,7 +28,7 @@ class ItemFragment : Fragment() {
         if (view is RecyclerView) {
             with(view) {
                 layoutManager = LinearLayoutManager(context)
-                adapter = MyItemRecyclerViewAdapter(SavedContent.ITEMS, listener)
+                adapter = MyItemRecyclerViewAdapter(SavedContent.getItems(), listener)
             }
         }
 

@@ -131,7 +131,7 @@ class CalculateFragment : Fragment() {
         if (caloriesPerDollar.text != resources.getString(R.string.cal)) {
             if (!nameOfItem.text.isBlank()) {
                 val newItem = SavedContent.SavedItem(nameOfItem.text.toString(), caloriesPerDollarNum, caloriesPerServingNum, numberOfServingsNum, priceOfItemNum)
-                if (newItem !in SavedContent.ITEMS) {
+                if (newItem !in SavedContent.getItems()) {
                     SavedContent.addItem(newItem)
                     clearFields()
                     // tell the MainActivity that the time has come
